@@ -6,7 +6,7 @@ const IndividualResults = (props) => {
     const [percent, setPercent] = useState();
     useEffect(() => {
         if ((props.object[id] / props.object.total) * 100 > 0.1) {
-            var tempGradient = "linear-gradient(to right, #083D77, #083D77 " + (props.object[id] / props.object.total) * 100 + "%, #f2f2f2 " + ((props.object[id] / props.object.total) * 100 + 0.1) + "%)";
+            var tempGradient = "linear-gradient(to right, #402c8a, #402c8a " + (props.object[id] / props.object.total) * 100 + "%, #f2f2f2 " + ((props.object[id] / props.object.total) * 100 + 0.1) + "%)";
         } else {
             var tempGradient = "linear-gradient( to right, #f2f2f2 0%, #f2f2f2 100% )";
         }
