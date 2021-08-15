@@ -11,8 +11,16 @@ function App() {
                     <ProbPage></ProbPage>
                 </Route>
                 <Route path='/'>
-                    <h1>Check probability of distributions</h1>
-                    <Link to='/start'>Start</Link>
+                    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", flexWrap: "nowrap", height: 100 + "vh" }}>
+                        <div style={{ width: 85 + "%", marginLeft: 7.5 + "%" }}>
+                            <h1>Keep track of Probability for rolling 2d6</h1>
+                        </div>
+                        <div style={{ display: "flex", justifyContent: "center" }}>
+                            <Link to='/start' className='startButton'>
+                                Get Started
+                            </Link>
+                        </div>
+                    </div>
                 </Route>
             </Switch>
         </Router>
