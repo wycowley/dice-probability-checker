@@ -44,7 +44,7 @@ const ProbPage = () => {
                 <IndividualResults id={11} object={savedProb}></IndividualResults>
                 <IndividualResults id={12} object={savedProb}></IndividualResults>
                 <div style={{ display: "flex", justifyContent: "center" }}>
-                    <Link to='/dice-probability-checker' className='restart'>
+                    <Link to='/' className='restart'>
                         Leave
                     </Link>
                     <button className='restart' onClick={restartArrays}>
